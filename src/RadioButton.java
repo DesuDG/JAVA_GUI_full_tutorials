@@ -22,27 +22,27 @@ public class RadioButton{
         rb2 = new JRadioButton("Female");
         rb2.setBounds(100,75, 100,20);
 
-//        ButtonGroup bg=new ButtonGroup();
-//        bg.add(rb1);bg.add(rb2);
+        ButtonGroup bg=new ButtonGroup();
+        bg.add(rb1);bg.add(rb2);
 
-//        rb1.addItemListener(new ItemListener() {
-//            public void itemStateChanged(ItemEvent e) {
-//
-//                if(rb1.isSelected()){
-//
-//                   JOptionPane.showMessageDialog(f,"You are Male!");
-//                }
-//            }
-//        });
-//        rb2.addItemListener(new ItemListener() {
-//            public void itemStateChanged(ItemEvent e) {
-//
-//                if(rb2.isSelected()){
-//
-//                    JOptionPane.showMessageDialog(f,"You are Female!");
-//                }
-//            }
-//        });
+        rb1.addItemListener(new ItemListener() {
+            public void itemStateChanged(ItemEvent e) {
+
+                if(rb1.isSelected()){
+
+                   JOptionPane.showMessageDialog(f,"You are Male!");
+                }
+            }
+        });
+        rb2.addItemListener(new ItemListener() {
+            public void itemStateChanged(ItemEvent e) {
+
+                if(rb2.isSelected()){
+
+                    JOptionPane.showMessageDialog(f,"You are Female!");
+                }
+            }
+        });
 
 
 
