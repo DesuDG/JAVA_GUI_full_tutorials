@@ -8,7 +8,7 @@ public class JcheckBox{
         JFrame f= new JFrame("DG Tech");
         JLabel l1;
 
-        l1=new JLabel("dseye");
+        l1=new JLabel("");
         l1.setFont(new Font("Serif",Font.BOLD,18));
         l1.setBounds(40,20,400,30);
 
