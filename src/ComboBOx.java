@@ -12,28 +12,30 @@ public class ComboBOx {
         l1.setBounds(100,20,400,30);
         l1.setForeground(Color.BLACK);
 
-//
-//        JLabel l2 = new JLabel();
-//        l2.setBounds(175,50,400,100);
-          JButton btn=new JButton("Select");
-          btn.setBounds(200,150,75,20);
+        String lang[] ={"Python","Java","Javascript","HTML","PHP","CSS"};
+        JComboBox cb=new JComboBox(lang);
+        cb.setBounds(50,100,90,20);
 
-        String languages[]={"Python","Java","HTML","JavaScript","PHP"};
-        JComboBox cb=new JComboBox(languages);
-        cb.setBounds(50, 100,90,20);
-
-        JTextField tf= new JTextField();
+        JTextField tf =new JTextField();
         tf.setBounds(200,100,100,20);
 
+        JButton btn =new JButton("Select");
+        btn.setBounds(200,150,75,20);
+
         btn.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent e) {
                 String st=cb.getSelectedItem().toString();
                 tf.setText(st);
+
             }
         });
 
-        f.add(cb);
+
+
+
         f.add(l1);
+        f.add(cb);
         f.add(tf);
         f.add(btn);
 
